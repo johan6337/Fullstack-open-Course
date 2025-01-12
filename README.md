@@ -1,2 +1,2 @@
-# Fullstack-open-Course
-Repo for submit my answer to this course
+My repo for containing my solutions to the excersises in the course "Full Stack Open" by the University of Helsinki.
+
