@@ -1,3 +1,6 @@
+
+ 
+
 const App = () => {
   // const-definitions
   const course = 'Half Stack application development'
@@ -10,9 +13,8 @@ const App = () => {
   return (
     <div>
       <Header course={course} />
-      <Content content = {exercises1} part = {part1} />
-      <Content content = {exercises2} part = {part2} />
-      <Content content = {exercises3} part = {part3} />
+      <Content />
+       
       <Total total = {[exercises1,exercises2,exercises3]} />
     </div>
   )
@@ -25,9 +27,13 @@ const Header = (props) => {
   )
 }
 
-const Content = (props) => {
+const Content = () => {
   return (
-    <p>{props.part} {props.content}</p>
+     <>
+        <Part course = 'Fundamentals of React' part = 'part 1' />
+        <Part course = 'Using props to pass data' part = 'part 2' />
+        <Part course = 'State of a component' part = 'part 3' />
+     </>
   )
 }
 
@@ -40,8 +46,18 @@ const Total = (props) => {
     <p>Number of exercises {sum1}</p>
   )
 }
+
+const Part = (props) => {
+  return (
+    <p>{props.course} {props.part}</p>
+  )
+}
+
+
 export default App;
 
+
+ 
 
 
 
